@@ -1,0 +1,138 @@
+.navbar-wrapper {
+    height: 6rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #D2042D;
+}
+
+.left-navbar-wrapper {
+    height: 100%;
+    width: 20rem;
+    background-color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-navbar {
+    font-size: 2rem;
+}
+
+.right-navbar-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-box {
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.navbar-box:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #d7d7d5;
+    border-radius: 5px;
+}
+
+.change {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-wrapper {
+        height: 5rem;
+    }
+
+    .left-navbar-wrapper {
+        font-size: 1.5rem;
+    }
+
+    .icon-navbar {
+        font-size: 1.5rem;
+    }
+
+    .right-navbar-wrapper {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .navbar-wrapper {
+        height: 4.5rem;
+    }
+
+    .left-navbar-wrapper {
+        font-size: 1.5rem;
+    }
+
+    .icon-navbar {
+        font-size: 1.5rem;
+    }
+
+    .right-navbar-wrapper {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .navbar-wrapper {
+        height: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-navbar-wrapper {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .right-navbar-wrapper {
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        z-index: 99;
+    }
+
+    .navbar-box {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .hide-navbar {
+        display: none;
+    }
+
+    .show-navbar {
+        display: block;
+    }
+}
